@@ -1,0 +1,310 @@
+@logoColor: #038c8c;
+@menuColor: #565656;
+
+@bannerColor1: #00727c;
+@bannerColor2: #0cb9a8;
+
+@switcherColor1: #069691;
+@switcherColor2: #048889;
+@switcherColor3: #017d82;
+
+@circle1: #04878b;
+@circle2: #079391;
+@circle3: #13b9ab;
+
+ul li {
+  display: inline;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.btn-buy {
+  height: 46px;
+  display: flex;
+  justify-content: flex-start;
+  cursor: pointer;
+  .cart {
+    height: inherit;
+    display: inline-block;
+    width: 56px;
+    background: url(../img/cart.png) no-repeat center #259d8e;
+  }
+  .btn {
+    width: 115px;
+    background-color: #54d3c3;
+    color: #ffffff;
+    font-size: 21px;
+    text-align: center;
+    line-height: 46px;
+  }
+}
+header {
+  height: 100px;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    .logo {
+      padding-top: 22px;
+      padding-left: 34px;
+      color: @logoColor;
+      font-size: 43px;
+      font-family: "StRydeRegular";
+      display: inline-block;
+      span {
+        display: inline-block;
+      }
+      .logo-letter {
+        width: 50px;
+        height: 60px;
+        color: #ffffff;
+        font-size: 43px;
+        font-family: "SegoeWP";
+        text-align: center;
+        background: linear-gradient(to bottom, #42eee3 0%, #42eee3 16.7%, #2ee2d6 16.7%, #2ee2d6 33.4%,
+        #1fd0c4 33.4%, #1fd0c4 50.1%, #17c0b5 50.1%, #17c0b5 66.8%,
+        #0eb0a5 66.8%, #0eb0a5 83.5%, #0aa096 8.5%, #0aa096 100%);
+      }
+      .logo-word {
+        padding-left: 10px;
+      }
+    }
+    nav {
+      display: inline-block;
+      ul {
+        padding-top: 44px;
+        li {
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+        li:first-child {
+          border-right: 1px solid @menuColor;
+          padding-left: 0;
+        }
+        li:last-child {
+          border-left: 1px solid @menuColor;
+          padding-right: 14px;
+        }
+        a {
+          font-size: 19px;
+          font-family: "SegoeWPN";
+          color: @menuColor;
+        }
+      }
+    }
+  }
+}
+
+.banner {
+  position: relative;
+  height: 540px;
+  background: linear-gradient(to bottom right, @bannerColor1, @bannerColor2);
+  .slider-panel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    div {
+      height: 120px;
+      width: 120px;
+      display: inline-block;
+      cursor: pointer;
+    }
+    .switcher1 {
+      background: url(../img/Shape1.png) @switcherColor1 no-repeat center;
+    }
+    .switcher2 {
+      background: url(../img/Shape2.png) @switcherColor2 no-repeat center;
+    }
+    .switcher3 {
+      background: url(../img/Shape3.png) @switcherColor3 no-repeat center;
+    }
+  }
+  .banner-container {
+    position: relative;
+    padding-left: 50px;
+    padding-top: 48px;
+    .banner-text {
+      margin-left: -8px;
+      padding-top: 134px;
+      position: absolute;
+      display: inline-block;
+      .banner-title {
+        display: flex;
+        justify-content: flex-start;
+        .banner-logo {
+          display: inline-block;
+          background: url(../img/earth.png) no-repeat;
+          height: 55px;
+          width: 55px;
+        }
+        .banner-logo-text {
+          padding-top: 2px;
+          padding-left: 10px;
+          width: 92px;
+          display: inline-block;
+          font-size: 18px;
+          font-family: "SegoeWPN";
+          color: #ffffff;
+          text-transform: uppercase;
+        }
+      }
+    }
+    .banner-promo {
+      padding-top: 60px;
+      padding-bottom: 34px;
+      .promo-title {
+        display: block;
+        font-size: 39px;
+        font-family: "SegoeWPN";
+        color: #ffffff;
+        text-transform: uppercase;
+      }
+      .promo-text {
+        display: block;
+        font-size: 17px;
+        font-family: "SegoeWPN";
+        color: #ffffff;
+      }
+    }
+    .main-circle {
+      display: inline-block;
+      position: relative;
+      background-color: @circle1;
+      height: 450px;
+      width: 450px;
+      border-radius: 225px;
+      div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+      }
+      .inner-circle1 {
+        background-color: @circle2;
+        height: 400px;
+        width: 400px;
+        border-radius: 200px;
+      }
+      .inner-circle2 {
+        background-color: @circle3;
+        height: 350px;
+        width: 350px;
+        border-radius: 175px;
+      }
+      .img {
+        margin-top: 22px;
+        position: absolute;
+        background: url(../img/iphone.png) no-repeat;
+        z-index: 10;
+        height: 466px;
+        width: 256px;
+      }
+    }
+  }
+}
+
+.about {
+  .about-title {
+    display: block;
+    text-align: center;
+    font-size: 41px;
+    font-family: "SegoeWPN";
+    color: #636363;
+    padding-top: 48px;
+    padding-bottom: 30px;
+  }
+  .about-text {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 15px;
+    font-family: "OpenSans";
+    color: #9F9F9F;
+    padding-bottom: 48px;
+  }
+}
+
+.bar-items {
+  display: flex;
+  .bar-item {
+    flex: 1;
+    height: 170px;
+    color: #ffffff;
+    padding-top: 25px;
+    line-height: 170px;
+    text-align: center;
+  }
+  .bar-item:nth-child(1) {
+    background-color: #01646c;
+  }
+  .bar-item:nth-child(2) {
+    background-color: #097b84;
+  }
+  .bar-item:nth-child(3) {
+    background-color: #118f99;
+  }
+  .bar-item:nth-child(4) {
+    background-color: #1da0aa;
+  }
+  .bar-item:nth-child(5) {
+    background-color: #29b7c2;
+  }
+  .bar-item:nth-child(6) {
+    background-color: #3ccad5;
+  }
+}
+
+.computer-shoecase {
+  background: linear-gradient(to bottom right, @bannerColor1, @bannerColor2);
+  .computer-container {
+    padding-top: 120px;
+    padding-bottom: 80px;
+    .computer-img {
+      background: url(../img/computer.png) no-repeat;
+      width: 559px;
+      height: 330px;
+      display: inline-block;
+      margin-left: 42px;
+    }
+    .computer-content {
+      display: inline-block;
+      vertical-align: top;
+      margin-top: 54px;
+      .computer-title {
+        display: block;
+        font-size: 39px;
+        font-family: "SegoeWPN";
+        color: #ffffff;
+        text-transform: uppercase;
+      }
+      .computer-text {
+        padding-top: 12px;
+        padding-bottom: 34px;
+        display: block;
+        font-size: 17px;
+        font-family: "SegoeWPN";
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.projects {
+  height: 512px;
+  display: flex;
+  .project-amount {
+    width: 60%;
+  }
+  .arrow {
+    width: 40%;
+    background: url(../img/arrows.png) no-repeat #49d7b0 center;
+  }
+}
