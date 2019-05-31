@@ -25,6 +25,7 @@ a {
   max-width: 1024px;
   margin: 0 auto;
 }
+
 .btn-buy {
   height: 46px;
   display: flex;
@@ -45,6 +46,7 @@ a {
     line-height: 46px;
   }
 }
+
 header {
   height: 100px;
   .header {
@@ -300,11 +302,39 @@ header {
 .projects {
   height: 512px;
   display: flex;
+  border-bottom: 1px solid #dedede;
   .project-amount {
+    padding-top: 80px;
     width: 60%;
+    color: #49d7b0;
+    font-size: 60px;
+    text-transform: uppercase;
+    text-align: center;
+    .percents {
+      display: block;
+      font-size: 140px;
+      font-weight: 700;
+    }
   }
   .arrow {
     width: 40%;
     background: url(../img/arrows.png) no-repeat #49d7b0 center;
+    &:hover {
+      background-color: #d8c800;
+    }
+  }
+}
+
+footer {
+  height: 100px;
+  position: relative;
+  span {
+    font-size: 23px;
+    font-family: "SegoeWPN";
+    color: #989898;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
